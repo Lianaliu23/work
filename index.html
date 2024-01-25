@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anika</title>
+    <script type="text/javascript">
+        function valid()
+        {
+            var erm="";
+            var name=null;
+            //name
+            name=document.getElementById('textname').value;
+            if(name=="")
+            erm="Name field is empty\n";
+         //fathername
+         name=document.getElementById('fathername').value;
+            if(name=="")
+            erm="Fathers Name field is empty\n";
+         //mothername
+         name=document.getElementById('mothersname').value;
+            if(name=="")
+            erm=" Mothers Name field is empty\n";
+         //dateofbirth
+         name=document.getElementById('dateofbirth').value;
+            if(name=="")
+            erm="DOB field is empty\n";
+         //contactno
+         name=document.getElementById('contactno').value;
+            if(name=="")
+            erm="Contact No. field is empty\n";
+         //email
+         name=document.getElementById('email').value;
+            if(name=="")
+            erm="E-mail field is empty\n";
+         //address
+         name=document.getElementById('address').value;
+            if(name=="")
+            erm="Address field is empty\n";
+
+            if(erm!="")
+            {
+            alert(erm);
+            return false;
+            }
+            else
+            return true;
+         }
+
+    </script>
+</head>
+<body style="background-color: rgb(192, 255, 247);">
+    <h1><marquee><font color="black">Information Form</marquee></h1>
+        <center>
+            Created by<br>Liana Rahman Bhuiyan<br>
+            <a href="#">E-mail : liana.lia34@gmail.com</a><br>
+        </center>
+        <form id="f1" name="form1" onsubmit="return valid();"method="get">
+         <table>
+            <tr>
+               <td>Name</td>
+               <td>:</td>
+               <td><input type="text" id="textname"></td>
+            </tr>
+
+            <tr>
+               <td>Mother's Name</td>
+               <td>:</td>
+               <td><input type="text" Name="Mothers Name" id="Mothers Name"></td>
+            </tr>
+            <tr>
+               <td>Date of Birth</td>
+               <td>:</td>
+               <td><input type="text" Name="dateofbirth" id="dateofbirth"></td>
+               <td>dd-mm-yyyy</td>
+            </tr>
+            <tr>
+               <td>Contact Number</td>
+               <td>:</td>
+               <td><input type="text" id="contactno"></td>
+            </tr>
+
+            <tr>
+               <td>E-mail</td>
+               <td>:</td>
+               <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+               <td>Religion</td>
+               <td>:</td>
+               <td><select name="rel">
+                  <option selected="selected">selected religion</option>
+                  <option>Islam</option>
+                  <option>Hindu</option>
+                  <option>Buddo</option>
+                  <option>Khristan</option>
+
+               </select>
+            </td>
+               
+            </tr>
+            <tr>
+               <td>Marial Status</td>
+               <td>:</td>
+               <td><input type="radio" Name="marital" id="marital" value="Married">Married</td>
+               <td><input type="radio" Name="marital" id="marital" value="UnMarried">UnMarried</td>
+            </tr>
+            <tr>
+               <td>Gender</td>
+               <td>:</td>
+               <td><input type="radio" Name="Gender" id="Gender">Male</td>
+               <td><input type="radio" Name="Female" id="Female">Female</td>
+            </tr>
+           
+            <tr>
+               <td>Country</td>
+               <td>:</td>
+               <td><select name="rel">
+                  <option selected="selected">select Country</option>
+                  <option>Bangladesh</option>
+                  <option>India</option>
+                  <option>Pakistan</option>
+                  <option>Sri Lanka</option>
+
+               </select>
+            </td>
+               
+            </tr>
+            <tr>
+               <td>Present Address </td><td>:</td>
+               <td colspan="4"><textarea cols="30" rows="4" id="Address"></textarea></td>
+            </tr>
+            <tr>
+               <td><input type="Submit" value="Insert"></td>
+               <td><input type="Submit" value="Delete"></td>
+               <td><input type="Submit" value="Update"></td>
+               
+            </tr>
+         </table>
+            
+        </form>
+            
+    
+    
+</body>
+</html>
